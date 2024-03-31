@@ -27,4 +27,3 @@ Print Settings
 * Material: Ideally use something other than PLA; I used PETG.
 * Supports: None required. If using Orca slicer, the auto-orient feature does all the work for you.
 * Walls: Use at least 3 walls.
-  
