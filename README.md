@@ -1,5 +1,8 @@
-# liteburner
+# Liteburner
 Ender 3 V3 KE Dual 5015 Blower Fan Shroud
+
+This repository is meant to be used as a central location to keep important files and information about the liteburner. 
+
 
 Bill of Materials (BOM)
 * 2x M3 L4 Flat Head Screws
