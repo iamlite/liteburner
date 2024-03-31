@@ -10,6 +10,12 @@ Bill of Materials (BOM)
 Optional:
 *   1x 24V LED
 *   1x 8Bit WS2812 LED Ring
+
+Links
+* [24V LED on Aliexpress]https://s.click.aliexpress.com/e/_Dky6Lzx
+* [LED Ring on Aliexpress]https://s.click.aliexpress.com/e/_DD0RQdB
+* [24V 5015 Blower on Aliexpress] https://s.click.aliexpress.com/e/_DBk6D53 
+ 
   
 Print Settings
 * Material: Ideally use something other than PLA; I used PETG.
