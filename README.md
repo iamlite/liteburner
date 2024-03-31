@@ -18,9 +18,9 @@ Optional:
 
 Links
 
-* [24V LED on Aliexpress]<https://s.click.aliexpress.com/e/_Dky6Lzx>
-* [LED Ring on Aliexpress]<https://s.click.aliexpress.com/e/_DD0RQdB>
-* [24V 5015 Blower on Aliexpress] <https://s.click.aliexpress.com/e/_DBk6D53>
+* [24V LED on Aliexpress](<https://s.click.aliexpress.com/e/_Dky6Lzx>)
+* [LED Ring on Aliexpress](<https://s.click.aliexpress.com/e/_DD0RQdB>)
+* [24V 5015 Blower on Aliexpress](<https://s.click.aliexpress.com/e/_DBk6D53>)
 
 Print Settings
 
