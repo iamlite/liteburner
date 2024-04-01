@@ -6,7 +6,7 @@ Ender 3 V3 KE Dual 5015 Blower Fan Shroud
 
 This repository is meant to be used as a central location to keep important files and information about the liteburner.
 
-The main challenge right now is having the LED ring play certain animations for different printer states. The idea is to
+The main challenge right now is having the LED ring play certain animations for different printer states.
 
 ## Ideas & Progress
 
