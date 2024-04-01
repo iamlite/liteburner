@@ -26,6 +26,16 @@ The main challenge right now is having the LED ring play certain animations for 
 
 YAML for home assistant automation can be found [here](https://github.com/iamlite/liteburner/blob/main/automation.yaml).
 
+To use what i have so far:
+*Disclaimer: your wled instance should be named "KELED", otherwise you will need to go through and edit the name for your own.*
+
+1. Go to your WLED url > config > Security & Updates > Backup & Restore
+2. Upload the [json file](https://github.com/iamlite/liteburner/blob/main/wled_presets_KELED.json) there and restart the WLED.
+3. Go to your klipper UI of choice find your configuration files and open moonraker.conf. Copy [this](https://github.com/iamlite/liteburner/blob/main/moonraker.conf) into there.
+4. The next step is the [Gcode Macro](https://github.com/iamlite/liteburner/blob/main/gcode_macro.cfg). You can replace your entire file or go through and edit as needed. Remember, this is for the Ender 3 V3 KE. 
+5. The final step is the automation.yaml. If you use homeassistant, this will be easy for you. Just create an automation and paste this in there. You may need to change names to match what you have set up for your WLED and Moonraker. I really hope to remove this in the future and switch to just using WLED and Moonraker.
+
+
 ## Bill of Materials (BOM)
 
 - 2x M3 L4 Flat Head Screws
