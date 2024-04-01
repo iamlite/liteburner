@@ -2,7 +2,7 @@
 
 Ender 3 V3 KE Dual 5015 Blower Fan Shroud
 
-![Example Image](images/img_2.jpeg)
+![Example Image](blob/main/Images/Img_2.jpeg)
 
 This repository is meant to be used as a central location to keep important files and information about the liteburner.
 
@@ -24,7 +24,7 @@ The main challenge right now is having the LED ring play certain animations for 
 
 **THE ISSUE:** While using Home Assistant is an easy option, it should not be necessary. Ideally we have Moonraker and WLED communicate with eachother for print progress, just as they do for other things via macros. This is still a WIP. 
 
-YAML for home assistant automation can be found !(here)[/automation.yaml]
+YAML for home assistant automation can be found above.
 
 ## Bill of Materials (BOM)
 
