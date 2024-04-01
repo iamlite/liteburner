@@ -2,15 +2,15 @@
 
 Ender 3 V3 KE Dual 5015 Blower Fan Shroud
 
-![Example Image](/Images/Img_2.jpeg){width=200px}
+<img src="https://github.com/iamlite/liteburner/blob/main/Images/Img_2.jpeg" alt="Liteburner" width="200">
 
 This repository is meant to be used as a central location to keep important files and information about the liteburner.
 
-The main challenge right now is having the LED ring play certain animations for different printer states. The idea is to 
+The main challenge right now is having the LED ring play certain animations for different printer states. The idea is to
 
 ## Ideas & Progress
 
-- [x] Set up presets in WLED for different statuses. 
+- [x] Set up presets in WLED for different statuses.
 - [x] Trigger those presets with gcode macros.
 - [x] Preset animation when the printer is heating up.
 - [x] Preset animation when the printer is done printing.
@@ -22,30 +22,30 @@ The main challenge right now is having the LED ring play certain animations for 
 
 *This has been achieved and works really well, through home assistant. Both WLED and Moonraker have integration with Home Assistant. The Moonraker integration in HA exposes print progress so making an automation to trigger based on progress is very simple.*
 
-**THE ISSUE:** While using Home Assistant is an easy option, it should not be necessary. Ideally we have Moonraker and WLED communicate with eachother for print progress, just as they do for other things via macros. This is still a WIP. 
+**THE ISSUE:** While using Home Assistant is an easy option, it should not be necessary. Ideally we have Moonraker and WLED communicate with eachother for print progress, just as they do for other things via macros. This is still a WIP.
 
 YAML for home assistant automation can be found above.
 
 ## Bill of Materials (BOM)
 
-* 2x M3 L4 Flat Head Screws
-* 2x M3 L10 Screws
-* 4x M3 L20 Screws
-* 2x 5015 24V Blowers
+- 2x M3 L4 Flat Head Screws
+- 2x M3 L10 Screws
+- 4x M3 L20 Screws
+- 2x 5015 24V Blowers
 
-### Optional:
+### Optional
 
-*   1x 24V LED
-*   1x 8Bit WS2812 LED Ring
+-   1x 24V LED
+-   1x 8Bit WS2812 LED Ring
 
 ## Links
 
-* [24V LED on Aliexpress](<https://s.click.aliexpress.com/e/_Dky6Lzx>)
-* [LED Ring on Aliexpress](<https://s.click.aliexpress.com/e/_DD0RQdB>)
-* [24V 5015 Blower on Aliexpress](<https://s.click.aliexpress.com/e/_DBk6D53>)
+- [24V LED on Aliexpress](<https://s.click.aliexpress.com/e/_Dky6Lzx>)
+- [LED Ring on Aliexpress](<https://s.click.aliexpress.com/e/_DD0RQdB>)
+- [24V 5015 Blower on Aliexpress](<https://s.click.aliexpress.com/e/_DBk6D53>)
 
 ## Print Settings
 
-* Material: Ideally use something other than PLA; I used PETG.
-* Supports: None required. If using Orca slicer, the auto-orient feature does all the work for you.
-* Walls: Use at least 3 walls.
+- Material: Ideally use something other than PLA; I used PETG.
+- Supports: None required. If using Orca slicer, the auto-orient feature does all the work for you.
+- Walls: Use at least 3 walls.
