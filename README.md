@@ -27,6 +27,7 @@ The main challenge right now is having the LED ring play certain animations for 
 YAML for home assistant automation can be found [here](https://github.com/iamlite/liteburner/blob/main/automation.yaml).
 
 To use what i have so far:
+
 *Disclaimer: your wled instance should be named "KELED", otherwise you will need to go through and edit the name for your own.*
 
 1. Go to your WLED url > config > Security & Updates > Backup & Restore
