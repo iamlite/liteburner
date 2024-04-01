@@ -2,7 +2,7 @@
 
 Ender 3 V3 KE Dual 5015 Blower Fan Shroud
 
-![Example Image](blob/main/Images/Img_2.jpeg)
+![Example Image](/Images/Img_2.jpeg)
 
 This repository is meant to be used as a central location to keep important files and information about the liteburner.
 
