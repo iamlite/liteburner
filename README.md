@@ -24,7 +24,7 @@ The main challenge right now is having the LED ring play certain animations for 
 
 **THE ISSUE:** While using Home Assistant is an easy option, it should not be necessary. Ideally we have Moonraker and WLED communicate with eachother for print progress, just as they do for other things via macros. This is still a WIP.
 
-YAML for home assistant automation can be found above.
+YAML for home assistant automation can be found [here](https://github.com/iamlite/liteburner/blob/main/automation.yaml).
 
 ## Bill of Materials (BOM)
 
