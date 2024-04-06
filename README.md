@@ -18,23 +18,46 @@ The main challenge right now is having the LED ring play certain animations for 
 - [ ] Preset animation when the printer is paused.
 - [ ] Preset animation when the printer is resuming.
 - [ ] Preset animation when the printer is stopping.
-- [ ] ⭐️ Print progress displayed on the ring. 1 LED turns on for every 12.5% of print progress while playing a preset animation.
+- [x] ⭐️ Print progress displayed on the ring. 1 LED turns on for every 12.5% of print progress while playing a preset animation.
 
-*This has been achieved and works really well, through home assistant. Both WLED and Moonraker have integration with Home Assistant. The Moonraker integration in HA exposes print progress so making an automation to trigger based on progress is very simple.*
-
-**THE ISSUE:** While using Home Assistant is an easy option, it should not be necessary. Ideally we have Moonraker and WLED communicate with eachother for print progress, just as they do for other things via macros. This is still a WIP.
-
-YAML for home assistant automation can be found [here](https://github.com/iamlite/liteburner/blob/main/automation.yaml).
-
-## To use what i have so far
+## To set up your LED Ring
 
 *Disclaimer: your wled instance should be named "KELED", otherwise you will need to go through and edit the name for your own.*
 
 1. Go to your WLED url > config > Security & Updates > Backup & Restore
 2. Upload the [json file](https://github.com/iamlite/liteburner/blob/main/wled_presets_KELED.json) there and restart the WLED.
 3. Go to your klipper UI of choice find your configuration files and open moonraker.conf. Copy [this](https://github.com/iamlite/liteburner/blob/main/moonraker.conf) into there.
-4. The next step is the [Gcode Macro](https://github.com/iamlite/liteburner/blob/main/gcode_macro.cfg). You can replace your entire file or go through and edit as needed. Remember, this is for the Ender 3 V3 KE.
-5. The final step is the automation.yaml. If you use homeassistant, this will be easy for you. Just create an automation and paste this in there. You may need to change names to match what you have set up for your WLED and Moonraker. I really hope to remove this in the future and switch to just using WLED and Moonraker.
+4. The next step is the [Gcode Macro]. I've included a copy of my gcode_macro file in this repo. Please note it has some extras such as nozzle cleaning and my own custom start script. Feel free to use it, but do so at your own risk.
+
+The follow macros should be copied into your gcode_macro.cfg file from the gcode_macro file in this repo. Please edit the START_PRINT and END_PRINT macros to your needs.
+
+- START_PRINT
+- END_PRINT
+- UPDATE_WLED_PROGRESS
+
+```gcode
+[gcode_macro UPDATE_WLED_PROGRESS]
+description: Update WLED ring progress based on print progress
+gcode:
+  {% if printer.display_status.progress > 0.875 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=13)}
+  {% elif printer.display_status.progress > 0.750 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=12)}
+  {% elif printer.display_status.progress > 0.625 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=11)}
+  {% elif printer.display_status.progress > 0.500 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=10)}
+  {% elif printer.display_status.progress > 0.375 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=9)}
+  {% elif printer.display_status.progress > 0.250 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=8)}
+  {% elif printer.display_status.progress > 0.125 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=7)}
+  {% elif printer.display_status.progress > 0.00 %}
+    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=6)}
+  {% endif %}
+  ```
+
 
 ## Bill of Materials (BOM)
 
