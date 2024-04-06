@@ -29,7 +29,7 @@ The main challenge right now is having the LED ring play certain animations for 
 3. Go to your klipper UI of choice find your configuration files and open moonraker.conf. Copy [this](https://github.com/iamlite/liteburner/blob/main/moonraker.conf) into there.
 4. The next step is the [Gcode Macro]. I've included a copy of my gcode_macro file in this repo. Please note it has some extras such as nozzle cleaning and my own custom start script. Feel free to use it, but do so at your own risk.
 
-The follow macros should be copied into your gcode_macro.cfg file from the gcode_macro file in this repo. Please edit the START_PRINT and END_PRINT macros to your needs.
+    The follow macros should be copied into your gcode_macro.cfg file from the gcode_macro file in this repo. Please edit the START_PRINT and END_PRINT macros to your needs.
 
    - START_PRINT
    - END_PRINT
