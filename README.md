@@ -31,33 +31,20 @@ The main challenge right now is having the LED ring play certain animations for 
 
 The follow macros should be copied into your gcode_macro.cfg file from the gcode_macro file in this repo. Please edit the START_PRINT and END_PRINT macros to your needs.
 
-- START_PRINT
-- END_PRINT
-- UPDATE_WLED_PROGRESS
+   - START_PRINT
+   - END_PRINT
+   - UPDATE_WLED_PROGRESS
 
-```gcode
-[gcode_macro UPDATE_WLED_PROGRESS]
-description: Update WLED ring progress based on print progress
-gcode:
-  {% if printer.display_status.progress > 0.875 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=13)}
-  {% elif printer.display_status.progress > 0.750 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=12)}
-  {% elif printer.display_status.progress > 0.625 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=11)}
-  {% elif printer.display_status.progress > 0.500 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=10)}
-  {% elif printer.display_status.progress > 0.375 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=9)}
-  {% elif printer.display_status.progress > 0.250 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=8)}
-  {% elif printer.display_status.progress > 0.125 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=7)}
-  {% elif printer.display_status.progress > 0.00 %}
-    {action_call_remote_method("set_wled_state", strip="keled", state=True, preset=6)}
-  {% endif %}
-  ```
+5. Open your slicer and add the following to your machine Gcode.
 
+Machine Start G-code:
+`START_PRINT BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer]`
+
+Machine End G-code:
+`END_PRINT`
+
+Layer Change G-code:
+`UPDATE_WLED_PROGRESS`
 
 ## Bill of Materials (BOM)
 
