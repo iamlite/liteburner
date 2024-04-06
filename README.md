@@ -49,6 +49,8 @@ The main challenge right now is having the LED ring play certain animations for 
 
 `UPDATE_WLED_PROGRESS`
 
+Done! Now you can start printing and your LED ring should automatically turn on and switch presets as it prints. 
+
 ## Bill of Materials (BOM)
 
 - 2x M3 L4 Flat Head Screws
