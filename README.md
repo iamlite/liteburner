@@ -37,15 +37,15 @@ The follow macros should be copied into your gcode_macro.cfg file from the gcode
 
 5. Open your slicer and add the following to your machine Gcode.
 
-Machine Start G-code:
+**Machine Start G-code:**
 
 `START_PRINT BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer]`
 
-Machine End G-code:
+**Machine End G-code:**
 
 `END_PRINT`
 
-Layer Change G-code:
+**Layer Change G-code:**
 
 `UPDATE_WLED_PROGRESS`
 
