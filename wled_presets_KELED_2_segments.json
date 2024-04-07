@@ -1,0 +1,105 @@
+{ "0": {}, "4": { "on": true, "bri": 41, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 8, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 74, "sx": 255, "ix": 255, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 152, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 74, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "led_printing", "ql": "4" }, "1": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 8, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 37, "sx": 183, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 1 }, { "id": 1, "start": 8, "stop": 152, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 37, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "led_idle", "ql": "1" }, "6": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 1, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 26, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_1" }, "2": { "on": true, "bri": 40, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 8, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 29, "sx": 128, "ix": 128, "pal": 50, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 152, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 29, "sx": 128, "ix": 128, "pal": 50, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "led_print_start", "ql": "2" }, "3": { "on": true, "bri": 70, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 8, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 97, "sx": 255, "ix": 255, "pal": 8, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 2 }, { "id": 1, "start": 8, "stop": 152, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 97, "sx": 128, "ix": 128, "pal": 8, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "led_heating", "ql": "3" }, "7": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 2, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 44, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_2" }, "8": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 3, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 6, "stop": 62, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_3" }, "9": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 4, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 80, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_4" }, "10": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 5, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 98, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_5" }, "5": { "on": true, "bri": 50, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 8, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 111, "sx": 255, "ix": 56, "pal": 10, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 152, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 111, "sx": 128, "ix": 128, "pal": 10, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }, { "stop": 0 }], "n": "led_print_end", "ql": "5" }, "11": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 6, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 116, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_6" }, "12": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 7, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 134, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_7" }, "13": { "on": true, "bri": 10, "transition": 7, "mainseg": 0, "seg": [{ "id": 0, "start": 0, "stop": 8, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 199, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }, { "id": 1, "start": 8, "stop": 152, "grp": 1, "spc": 0, "of": 0, "on": true, "frz": false, "bri": 255, "cct": 127, "set": 0, "n": "", "col": [
+                [255, 170, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ], "fx": 2, "sx": 128, "ix": 128, "pal": 28, "c1": 128, "c2": 128, "c3": 16, "sel": true, "rev": false, "mi": false, "o1": false, "o2": false, "o3": false, "si": 0, "m12": 0 }], "n": "printing_8" } }
