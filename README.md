@@ -6,48 +6,41 @@ Ender 3 V3 KE Dual 5015 Blower Fan Shroud
 
 This repository is meant to be used as a central location to keep important files and information about the liteburner.
 
-The main challenge right now is having the LED ring play certain animations for different printer states.
+This is a work in progress. Im still learning and trying to figure out how best to do things. I'm updating and tweaking frequently so make sure to check back often.
 
 ## Ideas & Progress
 
 - [x] Set up presets in WLED for different statuses.
 - [x] Trigger those presets with gcode macros.
-- [x] Preset animation when the printer is heating up.
-- [x] Preset animation when the printer is done printing.
-- [ ] Preset animation when the printer is cooling down.
-- [ ] Preset animation when the printer is paused.
-- [ ] Preset animation when the printer is resuming.
-- [ ] Preset animation when the printer is stopping.
 - [x] ⭐️ Print progress displayed on the ring. 1 LED turns on for every 12.5% of print progress while playing a preset animation.
 
 ## To set up your LED Ring
 
-*Disclaimer: your wled instance should be named "KELED", otherwise you will need to go through and edit the name for your own.*
+*Disclaimer: your wled instance should be named "KELED", otherwise you will need to go through all these files and edit the name for your own.*
 
-1. Go to your WLED url > config > Security & Updates > Backup & Restore
-2. Upload the [json file](https://github.com/iamlite/liteburner/blob/main/wled_presets_KELED.json) there and restart the WLED.
-3. Go to your klipper UI of choice find your configuration files and open moonraker.conf. Copy [this](https://github.com/iamlite/liteburner/blob/main/moonraker.conf) into there.
-4. The next step is the [Gcode Macro]. I've included a copy of my gcode_macro file in this repo. Please note it has some extras such as nozzle cleaning and my own custom start script. Feel free to use it, but do so at your own risk.
+1. Go to your WLED web ui > Config > Security & Updates > Backup & Restore. Upload [this json file](https://github.com/iamlite/liteburner/blob/main/wled_presets_KELED.json) there and reboot WLED.
 
-    The follow macros should be copied into your gcode_macro.cfg file from the gcode_macro file in this repo. Please edit the START_PRINT and END_PRINT macros to your needs.
+2. Go to your klipper UI of choice, find your configuration files and open moonraker.conf. Copy [this](https://github.com/iamlite/liteburner/blob/main/moonraker.conf) into there. Edit the IP address to your own WLED IP.
 
-   - START_PRINT
-   - END_PRINT
-   - UPDATE_WLED_PROGRESS
+3. Go to printer.cfg and add `[include wled_macro.cfg]` somewhere with your other includes at the top of your file. Then add [the wled_macro.cfg file](https://github.com/iamlite/liteburner/blob/main/wled_macro.cfg) to your config folder.
+
+4. I've included a copy of my gcode_macro file in this repo. It is the stock gcode_macro.cfg file for the KE. I've added start and stop macros and inserted some WLED stuff into the the various other macros. > [gcode_macro.cfg](https://github.com/iamlite/liteburner/blob/main/gcode_macro.cfg)
+
+    - You can replace your file with my gcode_macro.cfg or edit as needed if you have your own stuff to add to it :)
 
 5. Open your slicer and add the following to your machine Gcode.
 
-**Machine Start G-code:**
+    **Machine Start G-code:**
 
-`START_PRINT BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer]`
+    `START_PRINT BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer]`
 
-**Machine End G-code:**
+    **Machine End G-code:**
 
-`END_PRINT`
+    `END_PRINT`
 
-**Layer Change G-code:**
+    **Layer Change G-code:**
 
-`UPDATE_WLED_PROGRESS`
+    `UPDATE_WLED_PROGRESS`
 
 Done! Now you can start printing and your LED ring should automatically turn on and switch presets as it prints. 
 
